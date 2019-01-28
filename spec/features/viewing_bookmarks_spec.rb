@@ -6,3 +6,12 @@ feature 'viewing bookmarks' do
     expect(page).to have_content("Bookmark Manager")
   end
 end
+
+feature 'viewing bookmarks' do
+  scenario 'A user can see bookmarks' do
+    visit('/bookmarks')
+    expect(page).to have_content("http://www.google.com")
+    expect(page).to have_content("http://www.reuters.com")
+    expect(page).to have_content("http://www.bbc.co.uk")
+  end
+end
