@@ -1,7 +1,7 @@
 # Setting the environment to 'test'
 ENV['RACK_ENV'] = 'test'
 # Bringing the content of the 'app.rb' file
-require File.join(File.dirname(_FILE_), '..', 'app.rb')
+require File.join(File.dirname(__FILE__), '..', 'app.rb')
 # Requiring all the testing gems
 require 'capybara'
 require 'capybara/rspec'
