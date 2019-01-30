@@ -21,3 +21,10 @@ feature 'viewing bookmarks' do
     expect(page).to have_content('http://www.bbc.com')
   end
 end
+
+feature 'adding bookmarks' do
+  scenario 'A user can add a bookmark' do
+    visit('/')
+    fill_in 'Add', with: 'http://www.bbc.com'
+  end
+end
