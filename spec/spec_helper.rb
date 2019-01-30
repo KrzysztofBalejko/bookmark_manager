@@ -1,5 +1,5 @@
 # Setting the environment to 'test'
-ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
 # Bringing the content of the 'app.rb' file
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 # Requiring all the testing gems
