@@ -22,9 +22,11 @@ feature 'viewing bookmarks' do
   end
 end
 
-feature 'adding bookmarks' do
-  scenario 'A user can add a bookmark' do
-    visit('/')
-    fill_in 'Add', with: 'http://www.bbc.com'
+feature 'adding a new bookmark' do
+  scenario 'A user can add a bookmark to Bookmark Manager' do
+    visit('/bookmarks/new')
+    fill_in('url', with: 'http://testbookmark.com')
+    click_button('Submit')
+    expect(page).to have_content 'http://testbookmark.com'
   end
 end
