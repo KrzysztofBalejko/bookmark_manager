@@ -10,6 +10,10 @@ so that I can quickly go to web sites I regularly visit, I would like to see a l
 So that I can save a website
 I would like to add the site's address and title to bookmark manager`
 
+`As a user
+So I can remove my bookmark from Bookmark Manager
+I want to delete a bookmark`
+
 
 **Drafting initial domain model based on first user story**
 
