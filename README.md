@@ -14,6 +14,10 @@ I would like to add the site's address and title to bookmark manager`
 So I can remove my bookmark from Bookmark Manager
 I want to delete a bookmark`
 
+`As a user
+So I can change a bookmark in Bookmark Manager
+I want to update a bookmark`
+
 
 **Drafting initial domain model based on first user story**
 
