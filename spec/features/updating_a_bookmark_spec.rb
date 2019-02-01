@@ -4,7 +4,7 @@ feature 'Updating a bookmark' do
     visit('/bookmarks')
     expect(page).to have_link('Makers Academy', href: 'http://www.makersacademy.com')
 
-    first('./bookmark').click_button 'Edit'
+    first('.bookmark').click_button 'Edit'
     expect(current_path).to eq "/bookmarks/#{bookmark.id}/edit"
 
     fill_in('url', with: "http://www.snakersacademy.com")
